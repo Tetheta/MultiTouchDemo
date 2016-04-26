@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Multi-touch Demo</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="touchDemo.css">
+  </head>
+  <body>
+	<div id="menu" class="menu">
+	<!--Clear Button-->
+	<input type = "button" class = "myButton" id = "clear" value = "Clear" onclick = "menu.clearCanvas()" touchstart = "menu.clearCanvas()">
+	<!--Draw Mode Change Buttons-->
+	<input type = "radio" id = "permanent" value = "Permanent" name = "lineType">Permanent
+	<input type = "radio" id = "temporary" value = "Swipe" name = "lineType" checked>Swipe
+	<input type = "button" class = "myButton" id = "imageManip" value = "Toggle Gesture Image" onclick = "imageToggle()" touchstart = "menu.toggleImages()">
+	<!--Secondary Line/Drawing Options-->
+	<input type = "button" class = "myButton" id = "touches" value = "Toggle Touch Locations" onclick = "menu.showTouchLocations()" touchstart = "menu.showTouchLocations()">
+	<input type = "button" class = "myButton" id = "coordinates" value = "Toggle Coordinates" onclick = "menu.showCoordinates()" touchstart = "menu.showCoordinates()">
+	<!--Line Size Slider-->
+		<span> Thickness: </span> <!--Span tags unnecessary, but can apply formatting later-->
+		<input class = "bar" type = "range" id = "point" min = "5" max = "75" step = "5" value = "20" oninput = "menu.updateSlider(this.value)"/>
+	<!--Current Line Options-->
+		<div id="coordsDiv" class="coordsDiv">
+		<p id = "coordDisplay"></p>
+		</div>
+	</div>
+	
+	<div id="content">
+		<div id="images">
+			<!-- Divs are instantiated here to hold the images -->
+		</div>
+		<div id="drawing">
+			<canvas id="mycanvas" class="canvas" style="width: 100%; height: 100%">
+				Canvas element not supported.
+			</canvas>
+		</div>
+    </div>
+	<script src="AjaxJquery.js"></script>
+	<script src="touchDemo.js"></script>
+  </body>
+</html>

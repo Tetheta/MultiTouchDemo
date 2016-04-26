@@ -1,0 +1,121 @@
+.menu {
+	z-index: 1;
+	position: relative;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color:#ffffff;
+	text-shadow:
+    -1px -1px 1px #000,
+    1px -1px 1px #000,
+    -1px 1px 1px #000,
+    1px 1px 1px #000; 
+}
+
+.coordsDiv {
+	height:35px;
+}
+
+.canvas {
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #858585;
+	-webkit-box-shadow: 0px 10px 14px -7px #858585;
+	box-shadow: 0px 10px 14px -7px #858585;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #808080), color-stop(1, #525252));
+	background:-moz-linear-gradient(top, #808080 5%, #525252 100%);
+	background:-webkit-linear-gradient(top, #808080 5%, #525252 100%);
+	background:-o-linear-gradient(top, #808080 5%, #525252 100%);
+	background:-ms-linear-gradient(top, #808080 5%, #525252 100%);
+	background:linear-gradient(to bottom, #808080 5%, #525252 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#525252',GradientType=0);
+	background-color:#808080;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:13px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+
+.pressedButton {
+	-moz-box-shadow: 0px 10px 14px -7px #858585;
+	-webkit-box-shadow: 0px 10px 14px -7px #858585;
+	box-shadow: 0px 10px 14px -7px #858585;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #808080), color-stop(1, #525252));
+	background:-moz-linear-gradient(top, #808080 5%, #525252 100%);
+	background:-webkit-linear-gradient(top, #808080 5%, #525252 100%);
+	background:-o-linear-gradient(top, #808080 5%, #525252 100%);
+	background:-ms-linear-gradient(top, #808080 5%, #525252 100%);
+	background:linear-gradient(to bottom, #808080 5%, #525252 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#525252',GradientType=0);
+	background-color:#808080;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:13px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #000000;
+}
+
+.coordsDiv {
+	height: 35px;
+}
+
+input[type="range"] {
+	position: relative;
+	-webkit-appearance: none;
+	background-color: black;
+	height: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	position: relative;
+	top: 0px;
+	z-index: 1;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.6);
+	box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.6);
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb));
+}
+/*I can probably change the below to a class setting instead*/
+#img1 {
+	position: absolute;
+	background: url('Demo1.png'); /*How do I make this set inside the javascript? TODO*/
+	background-size: 100%;
+}
+
+#img2 {
+	position: absolute;
+	background: url('Demo2.png'); /*How do I make this set inside the javascript? TODO*/
+	background-size: 100%;
+}
+
+#img3 {
+	position: absolute;
+	background: url('Demo3.png'); /*How do I make this set inside the javascript? TODO*/
+	background-size: 100%;
+}
